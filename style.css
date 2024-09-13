@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculator {
+    width: 100%;
+    height: 101vh;
+    background: linear-gradient(45deg, coral, rgb(249, 249, 202));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.buttons {
+    background: #3a4452;
+    border: 20px solid rgba(0, 0, 0, 0.397);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.35), inset 0 5px 15px rgba(0, 0, 0, 0.5), inset 0 -15px 25px rgba(0, 0, 0, 0.35);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.calculator form input:hover {
+    background-color: rgba(169, 171, 171, 0.546)
+}
+
+.calculator form input:active {
+    box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.35), inset 0 5px 15px rgba(0, 0, 0, 0.5), inset 0 -15px 25px rgba(0, 0, 0, 0.35);
+    color: #fff;
+    text-shadow: 0 0 5px aquamarine, 0 0 8px aquamarine;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    border: 2px solid #fff;
+    box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.35), inset 0 5px 15px rgba(0, 0, 0, 0.5), inset 0 -15px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 50px;
+    padding: 5px;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    outline: none;
+}
+
+form input.operator {
+    color: gold
+}
+
+form input.AC {
+    color: rgb(234, 63, 63);
+}
+
+form input.AC:hover {
+    color: white;
+    background: red;
+}
+
+form input.DEL {
+    color: cyan;
+}
+
+form input.DEL:hover {
+    color: white;
+    background: lime;
+}
+
+form input.equal-to {
+    color: lime;
+}
+
+form input.equal-to:hover {
+    color: white;
+    background: limegreen;
+}
+
+@media only screen and (max-width: 900px) {
+    .calculator {
+        align-items: flex-start;
+        /* Aligns the calculator to the top */
+        padding-top: 80px;
+        /* Adds some padding to the top */
+    }
+    .buttons {
+         width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
